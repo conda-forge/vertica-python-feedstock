@@ -15,7 +15,7 @@ source:
     - setup.patch # remove unused import ordereddict
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -43,6 +43,7 @@ test:
 about:
   home: https://github.com/uber/vertica-python/
   license: MIT
+  license_file: LICENSE
   summary: 'A native Python client for the Vertica database.'
 
 extra:
