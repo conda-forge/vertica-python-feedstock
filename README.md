@@ -11,6 +11,18 @@ Summary: A native Python client for the Vertica database.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/vertica-python-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/vertica-python-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/vertica-python-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/vertica-python-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/vertica-python-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/vertica-python-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vertica-python/badges/version.svg)](https://anaconda.org/conda-forge/vertica-python)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vertica-python/badges/downloads.svg)](https://anaconda.org/conda-forge/vertica-python)
+
 Installing vertica-python
 =========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `vertica-python` available on your
 ```
 conda search vertica-python --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/vertica-python-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/vertica-python-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/vertica-python-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/vertica-python-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/vertica-python-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/vertica-python-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vertica-python/badges/version.svg)](https://anaconda.org/conda-forge/vertica-python)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/vertica-python/badges/downloads.svg)](https://anaconda.org/conda-forge/vertica-python)
 
 
 Updating vertica-python-feedstock
