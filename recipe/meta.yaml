@@ -1,7 +1,7 @@
 {%set name = "vertica-python" %}
-{%set version = "0.6.5" %}
+{%set version = "0.6.13" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "1be8404b73754505345a8383d98ed2b34c7f62a269469968369e45222a70a926" %}
+{%set hash_val = "f809821a8780cdb02a61d56e646fd73e71ab3f7a89ba9511a50390a025cdbaf0" %}
 
 package:
   name: {{ name }}
