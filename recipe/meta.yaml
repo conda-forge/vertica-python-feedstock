@@ -1,8 +1,8 @@
 {% set name = "vertica-python" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.3" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "8954baac4f9d3c7a7dd0972377836fb2ba63adc274d42d483f42d4538831004e" %}
+{% set hash = "0171a3bacdae06df4b0153d9da8adf2e591adaee818fdcb7555ff0376e4c8e11" %}
 {% set build = 0 %}
 
 package:
