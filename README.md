@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About vertica-python
 ====================
 
@@ -18,8 +14,15 @@ Summary: A native Python client for the Vertica database.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/vertica-python-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/vertica-python-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3638&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/vertica-python-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
