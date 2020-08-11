@@ -1,8 +1,7 @@
 {% set name = "vertica-python" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "92a5e72c4482c0c376e57495d040993617d8704d1c5d1095ffd984effbafd0a5" %}
+{% set hash = "cceb39d081b8d1628956205642e740a9fabcfd2c6ecd982c51134fba8215d0bd" %}
 
 package:
   name: {{ name|lower }}
@@ -10,12 +9,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
