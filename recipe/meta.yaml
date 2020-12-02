@@ -1,51 +1,43 @@
 {% set name = "vertica-python" %}
-{% set version = "0.10.1" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "92a5e72c4482c0c376e57495d040993617d8704d1c5d1095ffd984effbafd0a5" %}
+{% set version = "1.0.0" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vertica-python-{{ version }}.tar.gz
+  sha256: f042cf60ddd69eeb17c9f1586bae25da5b7282ca53d9afe0be30b943b4194d52
 
 build:
-  noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
     - pip
-
+    - python
   run:
     - python
     - python-dateutil >=1.5
-    - pytz
-    - future
     - six >=1.10.0
-    - psycopg2 >=2.5.1
 
 test:
   imports:
     - vertica_python
     - vertica_python.tests
-    - vertica_python.vertica
-    - vertica_python.vertica.messages
-    - vertica_python.vertica.messages.backend_messages
-    - vertica_python.vertica.messages.frontend_messages
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: https://github.com/uber/vertica-python/
-  license_file: LICENSE
-  license: MIT
-  license_family: MIT
+  home: https://github.com/vertica/vertica-python
   summary: A native Python client for the Vertica database.
-  dev_url: https://github.com/uber/vertica-python/
+  license: Apache-2.0
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
