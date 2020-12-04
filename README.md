@@ -5,11 +5,11 @@ Home: https://github.com/uber/vertica-python/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vertica-python-feedstock/blob/master/LICENSE.txt)
 
 Summary: A native Python client for the Vertica database.
 
-
+Development: https://github.com/uber/vertica-python/
 
 Current build status
 ====================
