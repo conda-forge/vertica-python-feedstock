@@ -1,15 +1,15 @@
 About vertica-python
 ====================
 
-Home: https://github.com/uber/vertica-python/
+Home: https://github.com/vertica/vertica-python
 
-Package license: MIT
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vertica-python-feedstock/blob/master/LICENSE.txt)
 
-Summary: A native Python client for the Vertica database.
+Summary: Official native Python client for the Vertica Analytics Database.
 
-Development: https://github.com/uber/vertica-python/
+Development: https://github.com/vertica/vertica-python
 
 Current build status
 ====================
@@ -116,5 +116,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@pmlandwehr](https://github.com/pmlandwehr/)
+* [@sitingren](https://github.com/sitingren/)
+
 
