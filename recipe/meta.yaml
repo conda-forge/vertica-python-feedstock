@@ -1,20 +1,18 @@
 {% set name = "vertica-python" %}
 {% set version = "1.3.2" %}
-{% set bundle = "tar.gz" %}
-{% set hash = "3664f0610c16cd5d606b8bbe5c0a50359b1e979d9383c07967bbd49d4990a02f" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  sha256: {{ hash }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vertica-python-{{ version }}.tar.gz
+  sha256: 3664f0610c16cd5d606b8bbe5c0a50359b1e979d9383c07967bbd49d4990a02f
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -29,11 +27,10 @@ requirements:
 test:
   imports:
     - vertica_python
-    - vertica_python.tests
-    - vertica_python.vertica
-    - vertica_python.vertica.messages
-    - vertica_python.vertica.messages.backend_messages
-    - vertica_python.vertica.messages.frontend_messages
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/vertica/vertica-python
