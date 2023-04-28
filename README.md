@@ -117,5 +117,6 @@ Feedstock Maintainers
 =====================
 
 * [@sitingren](https://github.com/sitingren/)
+* [@vertica-cla](https://github.com/vertica-cla/)
 
 
