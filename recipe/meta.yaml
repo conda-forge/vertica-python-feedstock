@@ -1,5 +1,5 @@
 {% set name = "vertica-python" %}
-{% set version = "1.3.8" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/vertica-python-{{ version }}.tar.gz
-  sha256: e52b894fc32eff83270264d66fd4cbe5bd1fd07ba0da7ef45f906164c136bebc
+  sha256: 542078ae2fedee694adedb04d81c6edc277b87ed7440302942107d86a0bcd445
 
 build:
   noarch: python
