@@ -41,6 +41,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - amakloor
     - vertica-cla
     - sitingren
     - pmlandwehr
